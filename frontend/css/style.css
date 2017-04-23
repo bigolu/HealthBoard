@@ -16,6 +16,11 @@ main {
   flex: 1 0 auto;
 }
 
+a:hover{
+  cursor: pointer;
+  cursor: hand;
+}
+
 .brand-logo{
   padding-left: 15px !important;
 }
