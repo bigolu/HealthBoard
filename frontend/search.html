@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Search</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/search.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <header>
+  <nav>
+    <div class="white nav-wrapper">
+      <a href="#" class="brand-logo">HB</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="modal-trigger waves-effect waves-light btn light-blue" href="#login">Dashboard</a></li>
+        <li><a href="#">Hi Biggie</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <main class="container">
+
+    <h1 class="center">Find a community</h1>
+    <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">textsms</i>
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">enter an illness</label>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="">
+          <h5 class="center">All Illnesses</h5>
+              <div id="all-ill" class="collection">
+              </div>
+            <script id="all-ill-template" type="text/x-handlebars-template">
+                {{#each illnesses}}
+                  <a href="#!" class="collection-item">{{this}}</a>
+                {{/each}}
+            </script>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer white">
+    <div class="footer-copyright white">
+      <div class="container black-text">
+      Made by <a class="brown-text text-lighten-3" href="https://github.com/bigolu">Biggie</a> and <a class="brown-text text-lighten-3" href="https://github.com/ipat81">Ishan</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/handlebars-v4.0.5.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/search.js"></script>
+
+  </body>
+</html>
