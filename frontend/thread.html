@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Posts</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/thread.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <header>
+  <nav>
+    <div class="white nav-wrapper">
+      <a href="#" class="brand-logo">HB</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="modal-trigger waves-effect waves-light btn light-blue" href="#login">Dashboard</a></li>
+        <li><a href="#">Hi Biggie</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <main class="container">
+    <div class="row"></div>
+    <div class="row"></div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="">
+            <ul id="subforums" class="collection">
+              <li class="collection-item row">
+                <div class="col s3">
+                  user4256 <br>
+                  <i id="thumb" class="material-icons">thumb_up</i> 2
+                </div>
+                <div class="col s9 right">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum enim et felis consectetur convallis at eget lacus. Duis vitae leo ut ante vestibulum porta. Vivamus pretium turpis sapien, et fermentum dolor semper et. Fusce quis pretium lorem. Praesent lobortis, leo nec porta commodo, nibh nunc pretium risus, ac vehicula sem nuncc et lectus. <br>
+                  <span class="right">Posted 2 days ago</span>
+                </div>
+              </li>
+            </ul>
+            <a href="#post" class="modal-trigger btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer white">
+    <div class="footer-copyright white">
+      <div class="container black-text">
+      Made by <a class="brown-text text-lighten-3" href="https://github.com/bigolu">Biggie</a> and <a class="brown-text text-lighten-3" href="https://github.com/ipat81">Ishan</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Post Modal Structure -->
+  <div id="post" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Post</a>
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/handlebars-v4.0.5.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/thread.js"></script>
+
+  </body>
+</html>
