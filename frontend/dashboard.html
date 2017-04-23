@@ -3,59 +3,79 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Welcome</title>
+  <title>Dashboard</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/dashboard.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+  <header>
   <nav>
     <div class="white nav-wrapper">
       <a href="#" class="brand-logo">HB</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <a class="modal-trigger waves-effect waves-light btn light-blue" href="#login">Login</a>
+        <li><a class="modal-trigger waves-effect waves-light btn light-blue" href="#login">Find Communities</a></li>
+        <li><a href="#">Hi Biggie</a></li>
       </ul>
     </div>
   </nav>
+  </header>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container right">
-        <br><br>
-        <h1 class="header center white-text text-lighten-2">Health Board</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+  <main class="container">
+
+    <h1 class="center">Dashboard</h1>
+    <div class="row"></div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="">
+            <h5 class="center">Your Communities:</h5>
+            <div class="row">
+              <div class="col s3 chip btn">Sarcoidosis <i class="close material-icons">close</i></div>
+              <div class="col s3 chip btn">Sarcoidosis <i class="close material-icons">close</i></div>
+              <div class="col s3 chip btn">Sarcoidosis <i class="close material-icons">close</i></div>
+              <div class="col s3 chip btn">Sarcoidosis <i class="close material-icons">close</i></div>
+            </div>
         </div>
-        <div class="row center">
-          <a href="#join" class="modal-trigger btn-large waves-effect waves-light blue-grey darken-2">Join Now</a>
+        <div class="">
+            <h5 class="center">Recent Activity:</h5>
+            <div class="row">
+              <ul class="collection">
+                <li class="collection-item">Alvin<span class="new badge" data-badge-caption="new"></span></li>
+                <li class="collection-item">Alvin<span class="new badge red" data-badge-caption="question"></span></li>
+                <li class="collection-item">Alvin<span class="new badge" data-badge-caption="new"></span></li>
+                <li class="collection-item">Alvin<span class="new badge" data-badge-caption="new"></span></li>
+                <li class="collection-item">Alvin<span class="new badge red" data-badge-caption="question"></span></li>
+              </ul>
+            </div>
         </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="img/jumbotron.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s10 offset-s1">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">forum</i></h2>
-            <h5 class="center">What Are We?</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+      
+        <div class="row">
+        <div class="col s12">
+          <div class="card deep-orange darken-1">
+            <div class="card-content black-text">
+              <span class="card-title center">Based on the communities you subscribe to, you may be interested in:</span>
+            </div>
+            <div class="card-action">
+              <a href="#" class="black-text">This is a link</a>
+              <a href="#" class="black-text">This is a link</a>
+              <a href="#" class="black-text">This is a link</a>
+            </div>
           </div>
         </div>
+        </div> 
       </div>
-
+  
+      <div class="col s4">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
     </div>
-  </div>
+  </main>
 
   <footer class="page-footer white">
     <div class="footer-copyright white">
@@ -132,7 +152,7 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/dashboard.js"></script>
 
   </body>
 </html>

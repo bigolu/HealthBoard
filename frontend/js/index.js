@@ -1,9 +1,7 @@
 (function($){
   $(function(){
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
     $('.modal').modal();
-    
+
     $('#joined').click(function(event){
       $('#join').html(' \
         <div class="valign-wrapper modal-content"> \
@@ -13,7 +11,7 @@
           </div> \
         </div> \
         <div class="modal-footer"> \
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Go to Dashboard</a> \
+          <a href="dashboard.html" class="modal-action modal-close waves-effect waves-green btn-flat">Go to Dashboard</a> \
         </div> \
       ');
     });
